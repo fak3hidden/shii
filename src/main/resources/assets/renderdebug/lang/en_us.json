@@ -1,0 +1,7 @@
+{
+	"category.renderdebug.general": "Render Pipeline Debugger",
+	"key.renderdebug.open_gui": "Open Render Pipeline Debugger UI",
+	"key.renderdebug.toggle_filter": "Toggle Block Visibility Filter",
+	"key.renderdebug.toggle_fullbright": "Toggle Fullbright Ambient Lighting",
+	"screen.renderdebug.title": "Render Pipeline & Occlusion Debugger"
+}

@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "renderdebug",
+	"version": "${version}",
+	"name": "Render Pipeline & Occlusion Debugger",
+	"description": "Educational client-side visual debugging utility for studying Minecraft's chunk rendering pipeline, block face occlusion culling, translucent render layers, and dynamic lightmap ambient lighting.",
+	"authors": [
+		"shii"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.shii.renderdebug.RenderDebugClientMod"
+		]
+	},
+	"mixins": [
+		{
+			"config": "renderdebug.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

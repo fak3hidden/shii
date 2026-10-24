@@ -1,0 +1,19 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "dev.shii.renderdebug.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"BlockOcclusionMixin",
+		"BlockRenderManagerMixin",
+		"BlockStateRenderMixin",
+		"BufferBuilderAlphaMixin",
+		"ChunkOcclusionGraphMixin",
+		"LightmapManagerMixin",
+		"RenderLayersMixin",
+		"SectionBuilderMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
