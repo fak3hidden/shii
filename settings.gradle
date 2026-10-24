@@ -9,4 +9,9 @@ pluginManagement {
 	}
 }
 
+plugins {
+	// Automatically discovers or downloads JDK 25 via Foojay if only Java 21 is installed globally
+	id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
 rootProject.name = 'renderdebug'

@@ -103,14 +103,21 @@ shii/
 
 ## Building & Running Locally
 
-Ensure **JDK 25** is installed (`java -version` >= `25`), then run:
+Minecraft `26.3` and Fabric Loom `1.19+` require a **Java 25 JVM**.
+
+This repository includes Gradle 9's **`gradle/gradle-daemon-jvm.properties`** (`toolchainVersion=25`) and the **`foojay-resolver-convention`** plugin, so **even if your system's default `java` is Java 21**, Gradle will automatically download and run its build daemon + Minecraft `26.3` on **OpenJDK 25** (cached cleanly under `~/.gradle/jdks/` without changing your system Java):
 
 ```bash
+# Pull latest changes if updating an existing clone/download
+git pull
+
 # Launch Minecraft 26.3 client in a development environment
 ./gradlew runClient
 
 # Build the production mod JAR under build/libs/
 ./gradlew build
 ```
+
+*(Alternatively, if you prefer managing JDKs manually on Linux/Pop!_OS via SDKMAN or Temurin, you can run `JAVA_HOME=/path/to/jdk-25 ./gradlew runClient`.)*
 
 Configuration is persisted automatically to `<instance>/config/renderdebug.json`.
